@@ -535,13 +535,13 @@
                 </a>
               </li>
               <li role="listitem">
-                <a href="https://wa.me/tunumerodetelefono" target="_blank" class="footer__link-icon"
+                <a href="https://wa.me/+5492604675575" target="_blank" class="footer__link-icon"
                   aria-label="Enviar mensaje por WhatsApp">
                   <i class="fab fa-whatsapp" aria-hidden="true"></i>
                 </a>
               </li>
               <li role="listitem">
-                <a href="tel:+tunumero" class="footer__link-icon" aria-label="Llamar por teléfono">
+                <a href="tel:+5492604675575" class="footer__link-icon" aria-label="Llamar por teléfono">
                   <i class="fas fa-phone" aria-hidden="true"></i>
                 </a>
               </li>
@@ -600,15 +600,20 @@
              MENU HAMBURGUESA 
 ========================================>-->
   <script>
-    console.log("Script cargado");
-    const toggle = document.querySelector(".menu-toggle");
-    const menu = document.querySelector(".header__menu");
+    document.addEventListener("DOMContentLoaded", () => {
+      console.log("Script cargado");
 
-    toggle.addEventListener("click", () => {
-      toggle.classList.toggle("active");
-      menu.classList.toggle("show");
+      const themeCheckbox = document.getElementById("theme-checkbox");
+
+      if (themeCheckbox) {
+        themeCheckbox.addEventListener("change", () => {
+          console.log("cambiando tema");
+          document.body.classList.toggle("dark-mode");
+        });
+      }
     });
   </script>
+
 
 </body>
 

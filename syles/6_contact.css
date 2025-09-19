@@ -5,7 +5,8 @@
   color: var(--texto);
   padding: 6rem 2rem;
   display: flex;
-  flex-direction: column; /* Base mobile-first */
+  flex-direction: column;
+  /* Base mobile-first */
   gap: 3rem;
   align-items: center;
   max-width: 75rem;
@@ -17,6 +18,9 @@
   flex: 1;
   max-width: 100%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact__title {
@@ -81,7 +85,7 @@
   width: 100%;
   max-width: 30rem;
   padding: 1.8rem;
-  background-image: 
+  background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-size: cover;
@@ -145,8 +149,8 @@
   box-shadow: 0 0 8px rgba(var(--color-secundario-rgb), 0.6);
 }
 
-.contact__input:focus:invalid + .contact__error,
-.contact__textarea:focus:invalid + .contact__error {
+.contact__input:focus:invalid+.contact__error,
+.contact__textarea:focus:invalid+.contact__error {
   display: block;
 }
 
@@ -180,9 +184,9 @@
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  transition: 
-    background-color 0.3s ease, 
-    transform 0.3s ease, 
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease,
     box-shadow 0.3s ease;
   margin-top: 1rem;
   align-self: center;
@@ -212,7 +216,7 @@
 
 /* Efectos de brillo y escala del botón completo */
 .contact__btn:hover {
-/*   background-color: var(--color-neon); */
+  /*   background-color: var(--color-neon); */
   color: var(--color-negro);
   transform: translateY(-0.1rem);
   box-shadow: 0 0 15px rgba(var(--color-neon-rgb), 0.6);
@@ -238,7 +242,7 @@
     text-align: left;
     margin-right: 2rem;
   }
-  
+
   .contact__btn {
     padding: 0.9rem 1.8rem;
     font-size: 1.05rem;
