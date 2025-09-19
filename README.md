@@ -1,18 +1,15 @@
-<p align="center">
-  <img src="https://ada.fonselp.com/static/media/logo.64e1716d.png" alt="Logo de Ada ITW" width="200">
-</p>
 
-<p align="center">
+  <img src="https://ada.fonselp.com/static/media/logo.64e1716d.png" alt="Logo de Ada ITW" width="200" align="center">
+
+
+<h2 align="center">
 🌸 Proyecto Final <span style="font-size:1.2rem; font-weight:bold;">Front End</span>🌸 <br>
 Maquetación Web con HTML y CSS
-</p>
+</h2>
 
-<p align="center" style="font-size:4rem; font-weight:bold;"> Landing Page de Portafolio Personal </p>
+<h1 align="center" style="font-size:4rem; font-weight:bold;"> Landing Page de Portafolio Personal </h1>
 
-<p align="center">
-  <img src="./img/presentacion.webp" alt="Perfil de Maria Gabriela Martinez Herrero" width="200">
-</p>
-
+<img src="./img/presentacion.webp" alt="Perfil de Maria Gabriela Martinez Herrero" width="200" align="center">
 
 ## Descripción
 Este proyecto es una landing page estática creada desde cero, cuyo principal objetivo fue consolidar y poner en práctica los conocimientos adquiridos en el curso de maquetación web. La página se desarrolló utilizando únicamente HTML5 para la estructura semántica y CSS3 para el diseño y los estilos.
@@ -75,10 +72,6 @@ En resumen, este proyecto representa la culminación del aprendizaje, demostrand
 
 ## Visualización del proyecto
 👉Deployado: [Ver sitio en NETLIFY](https://portafoliomagamahe.netlify.app/)
-
-👉 Deployado: [Ver sitio en GitHub Pages](https://magamahe.github.io/MaquetacionWeb-HTML-CSS-Portafolio/index.html)  
-
-- https://portafoliomagamahe.netlify.app/
 
 Si te interesa ver el código y visualizarlo en el navegador:  
 1. Descargar el repositorio.
