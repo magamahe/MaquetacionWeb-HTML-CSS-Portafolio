@@ -74,7 +74,11 @@ En resumen, este proyecto representa la culminación del aprendizaje, demostrand
 ---
 
 ## Visualización del proyecto
-👉 Deployado: [Ver sitio en GitHub Pages](https://usuario.github.io/MaquetacionWeb-HTML-CSS-Portafolio\index.html)  
+👉Deployado: [Ver sitio en NETLIFY](https://portafoliomagamahe.netlify.app/)
+
+👉 Deployado: [Ver sitio en GitHub Pages](https://magamahe.github.io/MaquetacionWeb-HTML-CSS-Portafolio/index.html)  
+
+- https://portafoliomagamahe.netlify.app/
 
 Si te interesa ver el código y visualizarlo en el navegador:  
 1. Descargar el repositorio.
@@ -87,8 +91,11 @@ Si te interesa ver el código y visualizarlo en el navegador:
 Ejemplo:  
 
 ![Vista previa del proyecto](./img/proyectos.png)
+_Visualización **Modo Oscuro** por defecto_
+
 
 ![Vista previa del proyecto](./img/modoclaro.png)
+_Visualización **Modo Claro** por elección_
 
 ---
 
