@@ -1,5 +1,7 @@
 
-  <img src="https://ada.fonselp.com/static/media/logo.64e1716d.png" alt="Logo de Ada ITW" width="200" align="center">
+<div align="center">
+  <img src="https://ada.fonselp.com/static/media/logo.64e1716d.png" alt="Logo de Ada ITW" width="200">
+</div>
 
 
 <h2 align="center">
@@ -9,7 +11,9 @@ Maquetación Web con HTML y CSS
 
 <h1 align="center" style="font-size:4rem; font-weight:bold;"> Landing Page de Portafolio Personal </h1>
 
-<img src="./img/presentacion.webp" alt="Perfil de Maria Gabriela Martinez Herrero" width="200" align="center">
+<div align="center">
+  <img src="./img/presentacion.webp" alt="Perfil de Maria Gabriela Martinez Herrero" width="200">
+</div>
 
 ## Descripción
 Este proyecto es una landing page estática creada desde cero, cuyo principal objetivo fue consolidar y poner en práctica los conocimientos adquiridos en el curso de maquetación web. La página se desarrolló utilizando únicamente HTML5 para la estructura semántica y CSS3 para el diseño y los estilos.
