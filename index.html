@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio | Gabriela Martínez</title>
+  <meta name="description"
+    content="Portafolio personal de Gabriela Martínez, desarrolladora full-stack y analista de datos. Explora mis proyectos, habilidades y contacta conmigo." />
+  <meta name="author" content="María Gabriela Martínez Herrero" />
+  <meta name="keywords"
+    content="portafolio, desarrolladora, full-stack, analista de datos, proyectos, HTML, CSS, JavaScript, Python, AWS, Azure, Power BI, Gabriela Martínez" />
+
+  <link rel="stylesheet" href="./syles/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://cdn-icons-png.flaticon.com/512/4341/4341131.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <input type="checkbox" id="theme-checkbox" class="theme-checkbox visually-hidden">
+
+  <div class="site">
+    <div id="particles" aria-hidden="true"></div>
+    <!-- ========================================
+                    HEADER 
+    ========================================>-->
+    <header class="header">
+      <nav class="header__nav" aria-label="Menú de navegación principal">
+
+        <input type="checkbox" id="menu-checkbox" class="header__menu-checkbox visually-hidden">
+        <label for="menu-checkbox" class="header__menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <span class="header__logo">MG</span>
+
+        <ul class="header__menu">
+          <li><a href="#inicio" class="header__link">Inicio</a></li>
+          <li><a href="#habilidades" class="header__link">Habilidades</a></li>
+          <li><a href="#cita" class="header__link">Cita</a></li>
+          <li><a href="#proyectos" class="header__link">Proyectos</a></li>
+          <li><a href="#contacto" class="header__link">Contacto</a></li>
+        </ul>
+
+        <div class="header__theme-toggle-container">
+          <label class="header__theme-toggle" for="theme-checkbox">
+            <span class="header__sun">☀️</span>
+            <span class="header__moon">🌙</span>
+          </label>
+        </div>
+
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <!-- ========================================
+                          HERO 
+      ==========================================>-->
+      <section id="inicio" class="hero" aria-labelledby="hero__title">
+        <div class="hero__content">
+          <h1 id="hero__title" class="hero__title">
+            ¡Hola! Soy <span class="hero__name">Gabriela</span>
+          </h1>
+          <p class="hero__subtitle">
+            "Especialista en desarrollo web integral, con la habilidad de transformar
+            la visión de un proyecto en una realidad digital optimizada. Mi enfoque va más allá del código:
+            utilizo mi experiencia en analítica de datos e inteligencia artificial para crear soluciones
+            robustas, eficientes y orientadas a resultados. Aporto una perspectiva única que fusiona el
+            diseño funcional con la innovación tecnológica para ofrecer productos de alto valor."
+          </p>
+          <a href="#proyectos" class="hero__btn btn">Ver Proyectos</a>
+        </div>
+
+        <div class="hero__image">
+          <picture>
+            <source srcset="./img/presentacion.webp" type="image/webp">
+            <img src="./img/presentacion.png" alt="Ilustración de perfil profesional" loading="lazy" />
+          </picture>
+        </div>
+      </section>
+
+      <!-- ========================================
+                    SKILLS 
+      ========================================>-->
+      <section id="habilidades" class="skills" aria-labelledby="skills__title">
+        <h2 id="skills__title" class="skills__title">Mi caja de herramientas digitales</h2>
+        <p class="skills__subtitle">"La programación es el arte de convertir ideas en realidad. <br>Aquí están las
+          herramientas que forjo para construir el futuro."</p>
+        <ul class="skills__list" role="list">
+          <li class="skills__item" role="listitem">
+            <article class="card-main" aria-label="Habilidad: NODE">
+              <figure class="card-img-shadow">
+                <img src="https://www.worldinside.com.ua/wp-content/uploads/2025/01/Nodejs-logo-light.webp"
+                  alt="Icono de NODE" class="skills__icon" />
+              </figure>
+              <section class="card-content">
+                <h3 class="skills__name">NODE JS</h3>
+              </section>
+            </article>
+          </li>
+
+          <li class="skills__item" role="listitem">
+            <article class="card-main" aria-label="Habilidad: HTML">
+              <figure class="card-img-shadow">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="Icono de HTML"
+                  class="skills__icon" />
+              </figure>
+              <section class="card-content">
+                <h3 class="skills__name">HTML</h3>
+              </section>
+            </article>
+          </li>
+          <li class="skills__item" role="listitem">
+            <article class="card-main" aria-label="Habilidad: CSS">
+              <figure class="card-img-shadow">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="Icono de CSS"
+                  class="skills__icon" />
+              </figure>
+              <section class="card-content">
+                <h3 class="skills__name">CSS</h3>
+              </section>
+            </article>
+          </li>
+          <li class="skills__item" role="listitem">
+            <article class="card-main" aria-label="Habilidad: JavaScript">
+              <figure class="card-img-shadow">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="Icono de JavaScript"
+                  class="skills__icon" />
+              </figure>
+              <section class="card-content">
+                <h3 class="skills__name">JavaScript</h3>
+              </section>
+            </article>
+          </li>
+
+          <li class="skills__item" role="listitem">
+            <article class="card-main" aria-label="Habilidad: GIT">
+              <figure class="card-img-shadow">
+                <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Icono de GIT"
+                  class="skills__icon" />
+              </figure>
+              <section class="card-content">
+                <h3 class="skills__name">GIT</h3>
+              </section>
+            </article>
+          </li>
+
+          <li class="skills__item" role="listitem">
+            <article class="card-main" aria-label="Habilidad: GITHUB">
+              <figure class="card-img-shadow">
+                <img src="https://i.postimg.cc/bJzWt5Rq/github.png" alt="Icono de GITHUB" class="skills__icon" />
+              </figure>
+              <section class="card-content">
+                <h3 class="skills__name">GITHUB</h3>
+              </section>
+            </article>
+          </li>
+
+          <li class="skills__item" role="listitem">
+            <article class="card-main" aria-label="Habilidad: SQL">
+              <figure class="card-img-shadow">
+                <img src="https://i.postimg.cc/NFVQbtN6/image-removebg-preview.png" alt="Icono de SQL"
+                  class="skills__icon" />
+              </figure>
+              <section class="card-content">
+                <h3 class="skills__name">SQL</h3>
+              </section>
+            </article>
+          </li>
+
+          <li class="skills__item" role="listitem">
+            <article class="card-main" aria-label="Habilidad: Power BI">
+              <figure class="card-img-shadow">
+                <img src="https://cdn-icons-png.flaticon.com/512/906/906342.png" alt="Icono de Power BI"
+                  class="skills__icon" />
+              </figure>
+              <section class="card-content">
+                <h3 class="skills__name">Power BI</h3>
+              </section>
+            </article>
+          </li>
+          <li class="skills__item" role="listitem">
+            <article class="card-main" aria-label="Habilidad: Python">
+              <figure class="card-img-shadow">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Icono de Python"
+                  class="skills__icon" />
+              </figure>
+              <section class="card-content">
+                <h3 class="skills__name">Python</h3>
+              </section>
+            </article>
+          </li>
+
+          <li class="skills__item" role="listitem">
+            <article class="card-main" aria-label="Habilidad: Pandas">
+              <figure class="card-img-shadow">
+                <img src="https://pandas.pydata.org/static/img/favicon_white.ico" alt="Icono de Pandas"
+                  class="skills__icon" />
+              </figure>
+              <section class="card-content">
+                <h3 class="skills__name">PANDAS</h3>
+              </section>
+            </article>
+          </li>
+
+          <li class="skills__item" role="listitem">
+            <article class="card-main" aria-label="Habilidad: Google Colab">
+              <figure class="card-img-shadow">
+                <img
+                  src="https://embed.zenn.studio/api/optimize-og-image/26db74eefbf565c20234/https%3A%2F%2Fcolab.research.google.com%2Fimg%2Fcolab_favicon_256px.png"
+                  alt="Icono de Google Colab" class="skills__icon" />
+              </figure>
+              <section class="card-content">
+                <h3 class="skills__name"><br>Google Colab</h3>
+              </section>
+            </article>
+          </li>
+
+          <li class="skills__item" role="listitem">
+            <article class="card-main" aria-label="Habilidad: Arduino">
+              <figure class="card-img-shadow">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Arduino_Logo.svg/1280px-Arduino_Logo.svg.png"
+                  alt="Icono de Arduino" class="skills__icon" />
+              </figure>
+              <section class="card-content">
+                <h3 class="skills__name"><br>ARDUINO</h3>
+              </section>
+            </article>
+          </li>
+
+          <li class="skills__item" role="listitem">
+            <article class="card-main" aria-label="Habilidad: AWS">
+              <figure class="card-img-shadow">
+                <img src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/aws-color.png"
+                  alt="Icono de AWS" class="skills__icon" />
+              </figure>
+              <section class="card-content">
+                <h3 class="skills__name">AWS</h3>
+              </section>
+            </article>
+          </li>
+          <li class="skills__item" role="listitem">
+            <article class="card-main" aria-label="Habilidad: Azure">
+              <figure class="card-img-shadow">
+                <img src="https://swimburger.net/media/ppnn3pcl/azure.png" alt="Icono de Azure" class="skills__icon" />
+              </figure>
+              <section class="card-content">
+                <h3 class="skills__name">Azure</h3>
+              </section>
+            </article>
+          </li>
+          <li class="skills__item" role="listitem">
+            <article class="card-main" aria-label="Habilidad: Google Cloud">
+              <figure class="card-img-shadow">
+                <img src="https://img.icons8.com/color/512/google-cloud.png" alt="Icono de Google Cloud"
+                  class="skills__icon" />
+              </figure>
+              <section class="card-content">
+                <h3 class="skills__name">Google Cloud</h3>
+              </section>
+            </article>
+          </li>
+        </ul>
+      </section>
+      <!-- ========================================
+                    QUOTE 
+      ========================================>-->
+      <section id="cita" class="quote" aria-labelledby="quote__text-title">
+        <blockquote class="quote__text">
+          <h2 id="quote__text-title" class="quote__text-title" hidden>Cita Inspiracional</h2>
+          "El trabajo va a ocupar gran parte de tu vida, y la única forma de estar realmente satisfecho es hacer lo que
+          consideren un trabajo extraordinario. Y el único camino para lograrlo es amando lo que hacen. Si no lo han
+          descubierto aún, sigan intentando. No se conformen".
+          <cite class="quote__author">– Steve Jobs</cite>
+        </blockquote>
+      </section>
+
+      <!-- ========================================
+                    PROJECTS 
+      ========================================>-->
+      <section id="proyectos" class="projects" aria-labelledby="projects__title">
+        <h2 id="projects__title" class="projects__title">Proyectos que cuentan mi historia</h2>
+        <p class="projects__intro-text">
+          "El desarrollo es mucho más que código; es el arte de construir, resolver y mejorar. Estos proyectos son el
+          resultado de mi curiosidad, dedicación y el deseo constante de llevar mis habilidades al siguiente nivel,
+          creando algo que realmente importe."
+        </p>
+        <ul class="project-list" role="list">
+          <li class="project-list__item project" role="listitem">
+            <article class="project__card project-card" aria-label="Machine Learning de peliculas">
+              <section class="project-card__content-box content-box">
+                <section class="project-card__date-box date-box">
+                  <time class="date-box__month" datetime="2023-11">Nov</time>
+                  <time class="date-box__date" datetime="2023">2023</time>
+                </section>
+                <h3 class="content-box__title">MLOps Steam</h3>
+                <p class="content-box__text">Ingeniería de Datos y despliegue de dos Modelos de Machine Learning (ML).
+                </p>
+                <section class="content-box__tags tags">
+                  <span class="tags__item tag">FASTAPI</span>
+                  <span class="tags__item tag">Python</span>
+                  <span class="tags__item tag">RENDER</span>
+                </section>
+                <a href="https://trabajo-deploy.onrender.com/" class="content-box__link see-more">Ver más</a>
+              </section>
+            </article>
+          </li>
+
+          <li class="project-list__item project" role="listitem">
+            <article class="project__card project-card" aria-label="Analisis Accidentes Viales CABA">
+              <section class="project-card__content-box content-box">
+                <section class="project-card__date-box date-box">
+                  <time class="date-box__month" datetime="2023-12">Dic</time>
+                  <time class="date-box__date" datetime="2023">2023</time>
+                </section>
+                <h3 class="content-box__title">Siniestros Viales</h3>
+                <p class="content-box__text">Dashboard de análisis de accidentes viales en CABA. ETL, EDA, KPIs</p>
+                <section class="content-box__tags tags">
+                  <span class="tags__item tag">Power BI</span>
+                  <span class="tags__item tag">Python</span>
+                </section>
+                <a href="https://github.com/magamahe/PII_SINIESTROS-VIALES_CABA" class="content-box__link see-more">Ver
+                  más</a>
+              </section>
+            </article>
+          </li>
+
+          <li class="project-list__item project" role="listitem">
+            <article class="project__card project-card" aria-label="Call Center">
+              <section class="project-card__content-box content-box">
+                <section class="project-card__date-box date-box">
+                  <time class="date-box__month" datetime="2024-03">Mar</time>
+                  <time class="date-box__date" datetime="2024">2024</time>
+                </section>
+                <h3 class="content-box__title">Análisis Call Center</h3>
+                <p class="content-box__text">Análisis detallado del rendimiento, tópicos discutidos y desempeño de los
+                  agentes</p>
+                <section class="content-box__tags tags">
+                  <span class="tags__item tag">PowerBI</span>
+                  <span class="tags__item tag">Python</span>
+                </section>
+                <a href="https://github.com/magamahe/Call-Center-Analysis" class="content-box__link see-more">Ver
+                  más</a>
+              </section>
+            </article>
+          </li>
+
+          <li class="project-list__item project" role="listitem">
+            <article class="project__card project-card" aria-label="Google Maps y Yelp, analisis">
+              <section class="project-card__content-box content-box">
+                <section class="project-card__date-box date-box">
+                  <time class="date-box__month" datetime="2024-06">Jun</time>
+                  <time class="date-box__date" datetime="2024">2024</time>
+                </section>
+                <h3 class="content-box__title">Quanticore</h3>
+                <p class="content-box__text">Sistema de Recomendación: restaurantes basado en reviews de Google Maps y
+                  YELP</p>
+                <section class="content-box__tags tags">
+                  <span class="tags__item tag">PowerBI</span>
+                  <span class="tags__item tag">GCP</span>
+                  <span class="tags__item tag">SCRUM</span>
+                </section>
+                <a href="https://github.com/magamahe/PROYECTO_FINAL_YELP" class="content-box__link see-more">Ver más</a>
+              </section>
+            </article>
+          </li>
+
+          <li class="project-list__item project" role="listitem">
+            <article class="project__card project-card" aria-label="Proyecto 4: Sistema de Biblioteca">
+              <section class="project-card__content-box content-box">
+                <section class="project-card__date-box date-box">
+                  <time class="date-box__month" datetime="2025-06">Jun</time>
+                  <time class="date-box__date" datetime="2025">2025</time>
+                </section>
+                <h3 class="content-box__title"> DATAVERSE</h3>
+                <p class="content-box__text">Sistema de Biblioteca web con gestión de préstamos y usuarios.</p>
+                <section class="content-box__tags tags">
+                  <span class="tags__item tag">Node.js</span>
+                  <span class="tags__item tag">JS</span>
+                  <span class="tags__item tag">GIT/GitHub</span>
+                </section>
+                <a href="https://github.com/magamahe/Sistema_Gestion_Biblioteca" class="content-box__link see-more">Ver
+                  más</a>
+              </section>
+            </article>
+          </li>
+
+          <li class="project-list__item project" role="listitem">
+            <article class="project__card project-card" aria-label="PetShop">
+              <section class="project-card__content-box content-box">
+                <section class="project-card__date-box date-box">
+                  <time class="date-box__month" datetime="2025-08">Ago</time>
+                  <time class="date-box__date" datetime="2025">2025</time>
+                </section>
+                <h3 class="content-box__title"> Shop-Pet</h3>
+                <p class="content-box__text">Página Web de venta de productos para mascotas</p>
+                <section class="content-box__tags tags">
+                  <span class="tags__item tag">HTML</span>
+                  <span class="tags__item tag">CSS</span>
+                  <span class="tags__item tag">GIT/GitHub</span>
+                </section>
+                <a href="https://shop-pet.netlify.app/" class="content-box__link see-more">Ver más</a>
+              </section>
+            </article>
+          </li>
+        </ul>
+      </section>
+      <!-- ========================================
+                    CONTACT 
+      ========================================>-->
+      <section id="contacto" class="contact" aria-labelledby="contact__title">
+        <section class="contact__content-left">
+          <h2 id="contact__title" class="contact__title">Conectemos y creemos juntos</h2>
+          <p class="contact__text">
+            Si tienes una oportunidad laboral, un proyecto interesante o simplemente quieres que te ayude, no dudes en
+            contactarme. Estoy siempre en busca de nuevos desafíos.
+          </p>
+          <div class="contact__availability-box">
+            <div class="availability-row">
+              <span class="availability-title">Modalidad de trabajo:</span>
+              <ul class="availability-list">
+                <li>Presencial</li>
+                <li>Remoto</li>
+                <li>Híbrido</li>
+              </ul>
+            </div>
+
+            <div class="availability-row">
+              <span class="availability-title">Disponibilidad:</span>
+              <ul class="availability-list">
+                <li>Part-time</li>
+                <li>Full-time</li>
+              </ul>
+            </div>
+          </div>
+
+        </section>
+        <form class="contact__form" action="https://formspree.io/f/mdklqdjz" method="POST">
+          <fieldset class="contact__field-group">
+            <legend class="contact__label" for="nombre">Nombre</legend>
+            <input id="nombre" name="nombre" type="text" class="contact__input" placeholder="Ej: María" required
+              pattern="^[A-Za-zÀ-ÿ\s]+$" />
+            <span class="contact__error">Por favor, ingresa solo letras</span>
+          </fieldset>
+
+          <fieldset class="contact__field-group">
+            <legend class="contact__label" for="apellido">Apellido</legend>
+            <input id="apellido" name="apellido" type="text" class="contact__input" placeholder="Ej: Pérez" required
+              pattern="^[A-Za-zÀ-ÿ\s]+$" />
+            <span class="contact__error">Por favor, ingresa solo letras</span>
+          </fieldset>
+
+          <fieldset class="contact__field-group">
+            <legend class="contact__label" for="email">Email</legend>
+            <input id="email" name="email" type="email" class="contact__input" placeholder="Ej: maria.perez@email.com"
+              required />
+            <span class="contact__error">Ingresa un email válido</span>
+          </fieldset>
+
+          <fieldset class="contact__field-group">
+            <legend class="contact__label" for="mensaje">Mensaje</legend>
+            <textarea id="mensaje" name="mensaje" class="contact__textarea" placeholder="Tu mensaje"
+              required></textarea>
+            <span class="contact__error">Este campo es obligatorio</span>
+          </fieldset>
+
+          <button type="submit" class="contact__btn btn">
+            <span>Enviar</span>
+            <i class="bi bi-arrow-right-square contact__btn-icon"></i>
+          </button>
+        </form>
+
+      </section>
+    </main>
+    <!-- ========================================
+                    FOOTER 
+    ========================================>-->
+
+    <footer class="footer">
+      <div class="footer__content-wrapper">
+        <section class="footer__section footer__section--logo">
+          <a href="#" class="footer__logo-link">
+            <img src="./img/MG.png" alt="Logo de Gabriela Martínez" class="footer__logo" />
+          </a>
+          <p class="footer__slogan">"Transformando ideas <br>en experiencias digitales."</p>
+        </section>
+
+        <section class="footer__section footer__section--nav">
+          <h3 class="footer__title">Navegación</h3>
+          <nav aria-label="Enlaces de navegación rápida">
+            <ul class="footer__nav-list" role="list">
+              <li role="listitem"><a href="#inicio" class="footer__nav-link">Inicio</a></li>
+              <li role="listitem"><a href="#habilidades" class="footer__nav-link">Habilidades</a></li>
+              <li role="listitem"><a href="#proyectos" class="footer__nav-link">Proyectos</a></li>
+              <li role="listitem"><a href="#contacto" class="footer__nav-link">Contacto</a></li>
+            </ul>
+          </nav>
+        </section>
+
+        <section class="footer__section footer__section--social">
+          <h3 class="footer__title">Redes Sociales</h3>
+          <nav class="footer__social-links" aria-label="Enlaces a redes sociales">
+            <ul class="footer__list-icons" role="list">
+              <li role="listitem">
+                <a href="https://github.com/magamahe" target="_blank" class="footer__link-icon"
+                  aria-label="Perfil de GitHub">
+                  <i class="fab fa-github-alt" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li role="listitem">
+                <a href="https://linkedin.com/in/magamahe" target="_blank" class="footer__link-icon"
+                  aria-label="Perfil de LinkedIn">
+                  <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+
+        <section class="footer__section footer__section--contact">
+          <h3 class="footer__title">Contacto</h3>
+          <address class="footer__contact-info">
+            <ul class="footer__list-icons footer__contact-icons" role="list">
+              <li role="listitem">
+                <a href="mailto:magamahe@gmail.com" class="footer__link-icon" aria-label="Enviar correo electrónico">
+                  <i class="fas fa-envelope" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li role="listitem">
+                <a href="https://wa.me/tunumerodetelefono" target="_blank" class="footer__link-icon"
+                  aria-label="Enviar mensaje por WhatsApp">
+                  <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li role="listitem">
+                <a href="tel:+tunumero" class="footer__link-icon" aria-label="Llamar por teléfono">
+                  <i class="fas fa-phone" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </address>
+        </section>
+      </div>
+
+      <p class="footer__copy">&copy; 2025 Gabriela Martínez. Todos los derechos reservados.</p>
+    </footer>
+
+  </div>
+  <!-- ========================================
+                    FONDO PARTICULAS 
+  ========================================>-->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <script>
+    function setParticles(color) {
+      particlesJS("particles", {
+        particles: {
+          number: { value: 80 },
+          color: { value: color }, // color dinámico
+          shape: { type: "circle" },
+          opacity: { value: 0.5 },
+          size: { value: 3 },
+          line_linked: { enable: true, distance: 150, color: color, opacity: 0.4, width: 1 },
+          move: { enable: true, speed: 2 },
+        },
+        interactivity: {
+          events: {
+            onhover: { enable: true, mode: "repulse" },
+            onclick: { enable: true, mode: "push" }
+          }
+        },
+      });
+    }
+
+    // inicializar en modo oscuro
+    setParticles("#00fff7");
+
+    // cuando cambie el tema
+    const themeCheckbox = document.getElementById("theme-checkbox");
+    themeCheckbox.addEventListener("change", () => {
+      if (themeCheckbox.checked) {
+        // 🌞 modo claro
+        setParticles("#506d2f");
+      } else {
+        // 🌙 modo oscuro
+        setParticles("#00fff7");
+      }
+    });
+  </script>
+
+  <!-- ========================================
+             MENU HAMBURGUESA 
+========================================>-->
+  <script>
+    console.log("Script cargado");
+    const toggle = document.querySelector(".menu-toggle");
+    const menu = document.querySelector(".header__menu");
+
+    toggle.addEventListener("click", () => {
+      toggle.classList.toggle("active");
+      menu.classList.toggle("show");
+    });
+  </script>
+
+</body>
+
+</html>

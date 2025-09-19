@@ -1,0 +1,37 @@
+/* ==========================
+   CITA
+========================== */
+.quote {
+  min-height: calc(100vh - 6rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.quote__text {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-style: italic;
+  max-width: 800px;
+  line-height: 1.6;
+  color: transparent;
+  background: linear-gradient(90deg,
+      var(--color-neon),
+      var(--color-secundario),
+      var(--color-neon),
+      var(--color-neon));
+  background-size: 400%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: shine 20s linear infinite;
+}
+
+.quote__author {
+  display: block;
+  margin-top: 1rem;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  font-weight: bold;
+  color: var(--color-neon);
+  font-style: normal;
+}

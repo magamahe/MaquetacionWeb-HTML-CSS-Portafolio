@@ -1,0 +1,246 @@
+/* ==========================
+   CONTACTO
+========================== */
+.contact {
+  color: var(--texto);
+  padding: 6rem 2rem;
+  display: flex;
+  flex-direction: column; /* Base mobile-first */
+  gap: 3rem;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact__content-left {
+  flex: 1;
+  max-width: 100%;
+  text-align: center;
+}
+
+.contact__title {
+  font-size: var(--titulo);
+  margin-bottom: 1.5rem;
+  color: var(--color-neon);
+  text-shadow: 0 0 10px rgba(var(--color-neon-rgb), 0.7);
+}
+
+.contact__text {
+  font-size: var(--fuente-descripcion);
+  color: var(--texto);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.contact__availability-box {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border: 1px solid var(--color-neon);
+  border-radius: var(--card-border-radius);
+  background-color: rgba(var(--color-neon-rgb), 0.08);
+  box-shadow: 0 0 10px rgba(var(--color-neon-rgb), 0.4);
+  max-width: 28rem;
+  width: 100%;
+}
+
+.availability-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.availability-title {
+  font-weight: 700;
+  color: var(--color-neon);
+  flex: 1;
+}
+
+.availability-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+  text-align: left;
+}
+
+.availability-list li {
+  color: var(--texto);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* ==========================
+   FORMULARIO
+========================== */
+.contact__form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 30rem;
+  padding: 1.8rem;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-position: center center;
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--box-shadow-neon);
+}
+
+.contact__field-group {
+  position: relative;
+  margin-bottom: 1rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.contact__label {
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+  color: var(--color-neon);
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+}
+
+.contact__input,
+.contact__textarea {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.3rem;
+  background-color: transparent;
+  color: var(--texto);
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.contact__input::placeholder,
+.contact__textarea::placeholder {
+  color: var(--color-texto-menu);
+  opacity: 0.7;
+}
+
+/* ==========================
+   MENSAJES DE ERROR
+========================== */
+.contact__error {
+  display: none;
+  font-size: 0.85rem;
+  color: var(--color-secundario);
+  margin-top: 0.3rem;
+}
+
+/* Mostrar borde y mensaje solo después de que el usuario toque el campo */
+.contact__input:focus:invalid,
+.contact__textarea:focus:invalid {
+  border-color: var(--color-secundario);
+  box-shadow: 0 0 8px rgba(var(--color-secundario-rgb), 0.6);
+}
+
+.contact__input:focus:invalid + .contact__error,
+.contact__textarea:focus:invalid + .contact__error {
+  display: block;
+}
+
+.contact__input:focus:valid,
+.contact__textarea:focus:valid {
+  border-color: var(--color-neon);
+  box-shadow: 0 0 8px rgba(var(--color-neon-rgb), 0.5);
+}
+
+.contact__textarea {
+  resize: vertical;
+  min-height: 6rem;
+}
+
+/* ==========================
+   BOTON DEL FORMULARIO 
+========================== */
+.contact__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.9rem 1.8rem;
+  background-color: var(--color-secundario);
+  color: var(--color-blanco);
+  border: 2px solid var(--color-neon);
+  border-radius: 2rem;
+  font-family: var(--fuente);
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: 
+    background-color 0.3s ease, 
+    transform 0.3s ease, 
+    box-shadow 0.3s ease;
+  margin-top: 1rem;
+  align-self: center;
+}
+
+/* Primer span: el texto "Enviar" */
+.contact__btn span:first-child {
+  transition: transform 0.3s ease;
+}
+
+/* Segundo span: la flecha */
+.contact__btn .contact__btn-icon {
+  opacity: 0;
+  transform: translateX(-1rem);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Efecto de hover: el texto se mueve y la flecha aparece */
+.contact__btn:hover span:first-child {
+  transform: translateX(-1rem);
+}
+
+.contact__btn:hover .contact__btn-icon {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Efectos de brillo y escala del botón completo */
+.contact__btn:hover {
+/*   background-color: var(--color-neon); */
+  color: var(--color-negro);
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0 15px rgba(var(--color-neon-rgb), 0.6);
+}
+
+.contact__btn:active {
+  transform: translateY(0);
+}
+
+/* ==========================
+   MEDIA QUERIES
+========================== */
+@media screen and (min-width: 768px) {
+  .contact {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    padding: 8rem var(--espacio);
+    justify-content: space-around;
+  }
+
+  .contact__content-left {
+    text-align: left;
+    margin-right: 2rem;
+  }
+  
+  .contact__btn {
+    padding: 0.9rem 1.8rem;
+    font-size: 1.05rem;
+  }
+}

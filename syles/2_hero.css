@@ -1,0 +1,147 @@
+/* ==========================
+   HERO - MOBILE FIRST
+========================== */
+.hero {
+  min-height: calc(100vh - 6rem);
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  position: relative;
+  text-align: center;
+}
+
+.hero__content {
+  flex: 1 1 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  overflow-wrap: break-word;
+}
+
+.hero__title {
+  font-size: 2rem; /* mobile first */
+  color: var(--color-neon);
+  margin-bottom: 1rem;
+  text-shadow: 0 0 2rem var(--color-neon);
+  animation: glow 2s infinite alternate;
+}
+
+.hero__name {
+  color: var(--color-secundario);
+  font-size: 2.2rem; /* mobile first */
+}
+
+.hero__subtitle {
+  font-size: 1rem; /* mobile first */
+  margin-bottom: 2rem;
+  color: var(--texto);
+  font-style: italic;
+}
+
+.hero__btn {
+  padding: 0.5rem 1.5rem;
+  border: 0.15rem solid var(--color-neon);
+  color: var(--color-neon);
+  background: transparent;
+  border-radius: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.hero__btn:hover {
+  background: var(--color-neon);
+  color: var(--color-bg);
+  box-shadow: 0 0 2rem var(--color-neon);
+}
+
+/* ==========================
+   HERO IMAGE
+========================== */
+.hero__image {
+  order: -1;
+  margin-bottom: 2rem;
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: var(--color-bg);
+  border: 0.15rem solid var(--color-neon);
+  box-shadow: 0 0 1rem var(--color-neon);
+  border-radius: 50%;
+  animation: floatImage 4s ease-in-out infinite;
+  max-width: 15rem;
+  aspect-ratio: 1 / 1; /* fuerza la proporción cuadrada */
+}
+
+.hero__image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover; /* mantiene la imagen circular sin deformarla */
+}
+
+/* ==========================
+   MEDIA QUERIES - TABLET / ESCRITORIO
+========================== */
+@media screen and (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: left;
+  }
+
+  .hero__content {
+    flex-basis: 50%;
+    padding-right: 2rem;
+    margin-bottom: 0;
+  }
+
+  .hero__title {
+    font-size: 3rem; /* escritorio */
+  }
+
+  .hero__name {
+    font-size: 3.5rem; /* escritorio */
+  }
+
+  .hero__subtitle {
+    font-size: 1.2rem; /* escritorio */
+  }
+
+  .hero__image {
+    flex-basis: 35%;
+    max-width: 22rem;
+    margin-top: 0;
+    order: 0;
+  }
+}
+
+/* ==========================
+   ANIMACIONES
+========================== */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 1rem var(--color-neon);
+  }
+  to {
+    text-shadow: 0 0 3rem var(--color-neon), 0 0 5rem var(--color-secundario);
+  }
+}
+
+@keyframes floatImage {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1rem);
+  }
+}

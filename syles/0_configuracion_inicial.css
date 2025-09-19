@@ -1,0 +1,140 @@
+/* ==========================
+   VARIABLES GLOBALES
+========================== */
+:root {
+/* ======================================
+   TEMA OSCURO CON CHECKBOX (POR DEFECTO)
+======================================= */
+  /* MENU */
+  --color-bg-menu: #0a0a0f;
+  --color-texto-menu: #f0f0f0;
+  --color-texto-menu-h: #00fff7;
+  --color-neon-menu: #00fff7;
+
+  /* GENERAL */
+  --color-bg: #0a0a0f;
+  --color-neon: #00fff7;
+  --color-secundario: #ff009d;
+  --texto: #f0f0f0;
+
+  /* Sombras y superposiciones */
+  --color-shadow-light: rgba(255, 255, 255, 0.2);
+  --color-card-overlay-solid: rgba(0, 0, 0, 0.91);
+  --color-card-overlay-gradient-start: rgba(0, 0, 0, 0.9);
+  --color-card-overlay-gradient-middle: rgba(0, 0, 0, 0.6);
+  --color-card-overlay-gradient-end: rgba(0, 0, 0, 0);
+
+  /* Títulos H2 */
+  --color-titulo-h2: var(--color-neon);
+  --tamanio-titulo-h2: 2rem;
+
+  /* Fuentes, espaciado y bordes */
+  --fuente: "Nunito", sans-serif;
+  --titulo: 2rem;
+  --fuente-descripcion: 1.2rem;
+  --espacio: 1rem;
+  --borde-radius: 0.5rem;
+  --card-border-radius: 0.625rem;
+
+  /* SKILL  TARJETA FONDO */
+  --skill-fondo: linear-gradient(240deg,var(--color-bg) 0%,rgba(36, 36, 36, 1) 100%);
+  --skill-color: #f5f5f5;
+
+  /* PROYECT */
+  /* --- Variables específicas para las TARJETAS DE PROYECTO (siempre oscuras) --- */
+  --card-overlay-solid: rgba(0, 0, 0, 0.91);
+  --card-overlay-gradient-start: rgba(0, 0, 0, 0.9);
+  --card-overlay-gradient-middle: rgba(0, 0, 0, 0.6);
+  --card-overlay-gradient-end: rgba(0, 0, 0, 0);
+  --card-shadow-light: rgba(255,255,255,0.2);
+  --card-text: #f0f0f0;
+  --card-gris-claro: rgb(185,185,185); 
+  --card-negro: #000000;
+  /* Tarjetas proyectos */
+  --project-color-1: 0deg;
+  --project-color-2: 90deg;
+  --project-color-3: 180deg;
+  --project-color-4: 270deg;
+
+  /* FORM Versiones RGB verificacion */
+  --color-bg-rgb: 10, 10, 15;
+  --color-neon-rgb: 0, 255, 247;
+  --color-secundario-rgb: 255, 0, 157;
+
+  /* contacto */
+  --box-shadow-neon: 0 0 50px rgba(255, 105, 180, 0.7),0 0 50px rgba(0, 255, 255, 0.7);
+
+/* ==========================
+   TEMA CLARO CON CHECKBOX
+=========================== */
+  .theme-checkbox:checked ~ .site {
+    /* MENU */
+    --color-bg-menu: #009688;
+    --color-texto-menu: #f5f5f5;
+    --color-texto-menu-h: #041e30;
+    --color-neon-menu: #00fff7;
+
+    /* Fondos y textos */
+    --color-bg: #f5f5f5;
+    --texto: #041e30; /* Azul oscuro profundo para el texto */
+    --color-neon: #1a37b6; /* Azul cian vibrante para acentos (similar a neón pero menos intenso) */
+    --color-secundario: #009688; /* Verde azulado intenso (verde turquesa) */
+ 
+    /* SKILL */
+    --skill-fondo: linear-gradient(240deg, #02302b 0%, #0a0a0a 100%);
+    --skill-color: #f5f5f5;
+
+    /* CONTACTO */
+    --box-shadow-neon: 0 0 40px rgba(0, 191, 255, 0.2),0 0 20px rgba(0, 191, 255, 0.1);
+  }
+}
+
+/* ==========================
+   INPUT OCULTO
+========================= */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+/* ==========================
+   RESETEO INICIAL
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-padding-top: 6rem;
+}
+body {
+  font-family: var(--fuente);
+  background: var(--color-bg);
+  color: var(--texto);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  position: relative;
+  line-height: 1.5;
+  transition: background-color 0.5s, color 0.5s;
+
+}
+h2 {
+  font-size: var(--tamanio-titulo-h2);
+  color: var(--color-titulo-h2);
+}
+#particles {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: var(--color-bg);
+  transition: background-color 0.3s;
+}

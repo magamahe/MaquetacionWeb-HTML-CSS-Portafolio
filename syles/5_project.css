@@ -1,0 +1,319 @@
+/* ==========================
+   PROYECTOS 
+========================== */
+.projects {
+  padding: 5rem 2rem;
+  text-align: center;
+  background-color: var(--color-bg);
+  box-shadow: 0 -0.625rem 1.25rem var(--color-shadow-light), 0 0.625rem 1.25rem var(--color-shadow-light);
+}
+
+.projects__title {
+  font-size: var(--titulo);
+  color: var(--color-neon);
+  margin-bottom: 1rem;
+}
+
+.projects__intro-text {
+  font-size: var(--fuente-descripcion);
+  color: var(--texto);
+  margin-bottom: 3rem;
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.project-list {
+  display: flex;
+  padding: 1rem;
+  overflow-x: auto;
+  justify-content: flex-start;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-secundario) var(--color-bg);
+  list-style: none;
+}
+
+.project-list::-webkit-scrollbar {
+  width: 0.625rem;
+  height: 0.625rem;
+}
+
+.project-list::-webkit-scrollbar-thumb {
+  background: var(--color-secundario);
+  border-radius: 0.625rem;
+  box-shadow: inset 0.125rem 0.125rem 0.125rem hsla(0, 0%, 100%, .25), inset -0.125rem -0.125rem 0.125rem rgba(0, 0, 0, .25);
+}
+
+.project-list::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+.project {
+  width: 20rem;
+  perspective: 62.5rem;
+  position: relative;
+  transition: transform 0.5s ease;
+  flex-shrink: 0;
+}
+
+.project:not(:first-child) {
+  margin-left: -10rem;
+}
+
+.project:hover {
+  transform: translateY(-1.25rem) scale(1.05);
+  z-index: 10;
+}
+
+/* Esta regla era el problema, ya que no estaba dentro de la media query.
+   Se ha eliminado del CSS general para que solo afecte al escritorio. */
+/* .project:hover~.project {
+  transform: translateX(10rem);
+} */
+
+.project-list__item:nth-child(4n + 1) .project-card {
+  filter: hue-rotate(var(--project-color-1));
+}
+
+.project-list__item:nth-child(4n + 2) .project-card {
+  filter: hue-rotate(var(--project-color-2));
+}
+
+.project-list__item:nth-child(4n + 3) .project-card {
+  filter: hue-rotate(var(--project-color-3));
+}
+
+.project-list__item:nth-child(4n + 4) .project-card {
+  filter: hue-rotate(var(--project-color-4));
+}
+
+.project-card {
+  padding-top: 10rem;
+  transform-style: preserve-3d;
+  background-image: url("https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  border-radius: var(--card-border-radius);
+  position: relative;
+  z-index: 1;
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 14rem;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0) 100%);
+  border-radius: var(--card-border-radius) var(--card-border-radius) 0 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.project-card:hover {
+  background-position: 80% 20%;
+  transform: rotate3d(0.5, 1, 0, 30deg);
+}
+
+.content-box {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.91);
+  border-radius: 0 0 var(--card-border-radius) var(--card-border-radius);
+  box-shadow: #00fff7 0 1.25rem 3.125rem -1.5625rem;
+  transition: all 0.5s ease-in-out;
+  padding: 3.125rem 1.5625rem 1.5625rem 1.5625rem;
+  transform-style: preserve-3d;
+  position: relative;
+  z-index: 3;
+}
+
+.content-box__title {
+  color: #ffffff;
+  font-size: 1.50rem;
+  font-weight: 900;
+  transition: all 0.5s ease-in-out;
+  transform: translate3d(0, 0, 1.25rem);
+}
+
+.content-box__text {
+  padding-top: 0.9375rem;
+  font-size: 0.85rem;
+  color: rgb(185, 185, 185);
+  transition: all 0.5s ease-in-out;
+  transform: translate3d(0, 0, 1.25rem);
+}
+
+.content-box__link {
+  display: block;
+  font-weight: 900;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #ff009d;
+  padding-top: 0.9375rem;
+  transition: all 0.5s ease-in-out;
+  transform: translate3d(0, 0, 1.25rem);
+}
+
+.date-box {
+  position: absolute;
+  top: -2rem;
+  left: 1.5625rem;
+  height: 4.1rem;
+  width: 4.1rem;
+  background-color: #000000;
+  border-radius: var(--card-border-radius);
+  padding: 0.625rem;
+  box-shadow: #00fff7 0 1.25rem 3.75rem 0, #ff009d 0 1.125rem 2.25rem -1.125rem;
+  transform: translate3d(0, 0, 3.125rem);
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.date-box__month {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.date-box__date {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ff009d;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: break-word;
+  line-height: 1;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3125rem;
+  margin-top: 0.9375rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.tags__item {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: #f0f0f0;
+  text-transform: uppercase;
+  border: 0.0625rem solid rgba(255, 0, 157, 0.5);
+  border-radius: 2rem;
+  padding: 0.2rem 0.85rem 0.25rem;
+  background-color: rgba(10, 10, 15, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+/* ==========================
+   REGLAS PARA MÓVIL
+========================== */
+@media screen and (max-width: 767px) {
+  .project-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    overflow-x: hidden;
+  }
+
+  .project {
+    width: 100%;
+    max-width: 20rem;
+    margin: 0;
+    flex-shrink: 1;
+    perspective: none;
+    transition: none;
+  }
+
+  .project:not(:first-child) {
+    margin-left: 0;
+  }
+
+  /* Nuevo efecto hover para móvil: sin 3D, solo escala */
+  .project:hover {
+    transform: scale(1.05);
+    z-index: 10;
+  }
+
+  .project-card {
+    position: relative;
+    border-radius: var(--card-border-radius);
+    overflow: hidden;
+    padding-top: 0;
+    min-height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transform-style: none;
+    clip-path: none;
+  }
+
+  .project-card::before {
+    height: 100%;
+    border-radius: var(--card-border-radius);
+    transform: none;
+  }
+
+  .content-box {
+    position: relative;
+    padding-top: 5rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    background-color: rgba(0, 0, 0, 0.91);
+    border-radius: 0 0 var(--card-border-radius) var(--card-border-radius);
+    height: auto;
+    transform: none;
+    box-shadow: #00fff7 0 1.25rem 3.75rem 0, #ff009d 0 1.125rem 2.25rem -1.125rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-box__title {
+    font-size: 1.4rem;
+    transform: none;
+  }
+
+  .content-box__text,
+  .content-box__link {
+    transform: none;
+  }
+
+  .date-box {
+    position: static;
+    top: auto;
+    left: auto;
+    z-index: 10;
+    transform: none;
+    margin-bottom: 1rem;
+  }
+
+  .date-box__date,
+  .date-box__month {
+    font-size: 1rem;
+  }
+
+  .tags {
+    margin-top: 0.5rem;
+    gap: 0.2rem;
+  }
+
+  .tags__item {
+    font-size: 0.7rem;
+    padding: 0.1rem 0.5rem;
+  }
+}
