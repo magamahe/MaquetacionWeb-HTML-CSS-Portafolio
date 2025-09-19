@@ -7,7 +7,7 @@
 Maquetación Web con HTML y CSS
 </p>
 
-<p align="center" style="font-size:2rem; font-weight:bold;"> Landing Page de Portafolio Personal </p>
+<p align="center" style="font-size:4rem; font-weight:bold;"> Landing Page de Portafolio Personal </p>
 
 <p align="center">
   <img src="./img/presentacion.webp" alt="Perfil de Maria Gabriela Martinez Herrero" width="200">
@@ -91,10 +91,12 @@ Si te interesa ver el código y visualizarlo en el navegador:
 Ejemplo:  
 
 ![Vista previa del proyecto](./img/proyectos.png)
+
 _Visualización **Modo Oscuro** por defecto_
 
 
 ![Vista previa del proyecto](./img/modoclaro.png)
+
 _Visualización **Modo Claro** por elección_
 
 ---
