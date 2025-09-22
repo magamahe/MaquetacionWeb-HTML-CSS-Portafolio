@@ -11,7 +11,7 @@
 }
 
 .quote__text {
-  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
   font-style: italic;
   max-width: 800px;
   line-height: 1.6;
@@ -34,4 +34,16 @@
   font-weight: bold;
   color: var(--color-neon);
   font-style: normal;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
