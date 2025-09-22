@@ -15,6 +15,21 @@ Maquetación Web con HTML y CSS
   <img src="./img/presentacion.webp" alt="Perfil de Maria Gabriela Martinez Herrero" width="200">
 </div>
 
+---
+
+### Indice
+- [Descripción](#descripción)
+- [Características principales](#características-principales)
+- [Tecnologías utilizadas](#tecnologías-utilizadas)
+- [Estructura del proyecto](#estructura-del-proyecto)
+- [Visualización del proyecto](#visualización-del-proyecto)
+- [Capturas de pantalla](#capturas-de-pantalla)
+- [Contacto](#contacto)
+
+---
+
+
+
 ## Descripción
 Este proyecto es una landing page estática creada desde cero, cuyo principal objetivo fue consolidar y poner en práctica los conocimientos adquiridos en el curso de maquetación web. La página se desarrolló utilizando únicamente HTML5 para la estructura semántica y CSS3 para el diseño y los estilos.
 
@@ -23,6 +38,8 @@ El proceso se enfocó en una metodología **mobile-first**, asegurando que la ex
 Además de la maquetación, se prestó especial atención a la personalización del sitio, implementando una paleta de colores y tipografías personalizadas, y añadiendo animaciones y transiciones sutiles para mejorar la interactividad y el atractivo visual.  
 
 En resumen, este proyecto representa la culminación del aprendizaje, demostrando la capacidad de construir una página web moderna, responsive y visualmente agradable sin recurrir a frameworks o librerías externas.
+
+<a href="#indice">⬆️ Volver al índice</a>
 
 --- 
 
@@ -35,16 +52,24 @@ En resumen, este proyecto representa la culminación del aprendizaje, demostrand
 - 🔖 **Estructura CSS con BEM** para mantener el código organizado y modular.  
 - 📈 **Optimización SEO** con etiquetas semánticas y metadatos.  
 - 🌙 **Modo oscuro y claro** para mejorar la experiencia visual según la preferencia del usuario.
+ 
+<a href="#indice">⬆️ Volver al índice</a>
 
 --- 
 
 ## Tecnologías utilizadas
+
+
 | HTML5 | CSS3 | Git | GitHub | Netlify | Vercel |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="50" height="50"/> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="50" height="50"/> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="50" height="50"/> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="50" height="50"/> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg" alt="Netlify" width="50" height="50"/> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" alt="Vercel" width="50" height="50"/> |
+
+<a href="#indice">⬆️ Volver al índice</a>
+
 ---
 
 ## Estructura del proyecto
+
 ```bash
 📂 MaquetacionWeb-HTML-CSS-Portafolio
 ├── 📄 index.html
@@ -65,6 +90,8 @@ En resumen, este proyecto representa la culminación del aprendizaje, demostrand
 └── README.md
 ```
 
+<a href="#indice">⬆️ Volver al índice</a>
+
 ---
 
 ## Visualización del proyecto
@@ -80,6 +107,8 @@ Si te interesa ver el código y visualizarlo en el navegador:
 2. Abrir carpeta en Visual Studio Code  
 2. Abrir el archivo index.html en cualquier navegador.  
 
+<a href="#indice">⬆️ Volver al índice</a>
+
 ---
 
 ## Capturas de pantalla
@@ -93,6 +122,8 @@ _Visualización **Modo Oscuro** por defecto_
 ![Vista previa del proyecto](./img/modoclaro.png)
 
 _Visualización **Modo Claro** por elección_
+
+<a href="#indice">⬆️ Volver al índice</a>
 
 ---
 
