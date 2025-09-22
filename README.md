@@ -40,14 +40,32 @@ En resumen, este proyecto representa la culminación del aprendizaje, demostrand
 
 ## Tecnologías utilizadas
 
-<p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="50" height="50"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="50" height="50"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="50" height="50"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="50" height="50"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg" alt="Netlify" width="50" height="50"/>
-
-</p>
+<div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+  <div style="text-align: center;">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="50" height="50"/>
+    <div>HTML5</div>
+  </div>
+  <div style="text-align: center;">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="50" height="50"/>
+    <div>CSS3</div>
+  </div>
+  <div style="text-align: center;">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="50" height="50"/>
+    <div>Git</div>
+  </div>
+  <div style="text-align: center;">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="50" height="50"/>
+    <div>GitHub</div>
+  </div>
+  <div style="text-align: center;">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg" alt="Netlify" width="50" height="50"/>
+    <div>Netlify</div>
+  </div>
+  <div style="text-align: center;">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" alt="Vercel" width="50" height="50"/>
+    <div>Vercel</div>
+  </div>
+</div>
 
 ---
 
@@ -75,7 +93,11 @@ En resumen, este proyecto representa la culminación del aprendizaje, demostrand
 ---
 
 ## Visualización del proyecto
-👉Deployado: [Ver sitio en NETLIFY](https://portafoliomagamahe.netlify.app/)
+👉Deployado: 
+[Ver sitio en VERSEL](https://portafoliomagamahe.vercel.app/)
+
+[Ver sitio en NETLIFY](https://magamahe-portfolio.netlify.app/)
+
 
 Si te interesa ver el código y visualizarlo en el navegador:  
 1. Descargar el repositorio.
