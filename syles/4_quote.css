@@ -25,6 +25,8 @@
   background-clip: text;
   -webkit-background-clip: text;
   animation: shine 20s linear infinite;
+  text-shadow: 2px 2px 0 rgba(146,144,144,0.6);
+  
 }
 
 .quote__author {
