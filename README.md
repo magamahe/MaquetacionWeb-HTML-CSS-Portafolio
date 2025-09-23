@@ -101,6 +101,8 @@ En resumen, este proyecto representa la culminación del aprendizaje, demostrand
 
 - [Ver sitio en NETLIFY](https://magamahe-portfolio.netlify.app/)
 
+- [Ver sitio en GITHUB](https://magamahe.github.io/MaquetacionWeb-HTML-CSS-Portafolio/)
+
 
 Si te interesa ver el código y visualizarlo en el navegador:  
 1. Descargar el repositorio.
